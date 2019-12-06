@@ -1,0 +1,20 @@
+{
+  "name": "kie-wb-tests",
+  "version": "1.0.0",
+  "description": "Kie Workbench tests",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^4.1.1",
+    "cypress": "^3.7.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.3",
+    "webpack": "^4.41.2"
+  }
+}
