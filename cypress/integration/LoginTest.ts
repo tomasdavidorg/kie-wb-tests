@@ -8,7 +8,5 @@ describe("Login test", () => {
         cy.get(".btn-lg").click()
         cy.get("[data-field='welcome']").should("have.text", "Welcome to Red Hat Process Automation Manager")
         cy.get("#mega-menu").get("a:has(span.pficon-user)").should("have.text", user)
-
-
     })
 })
