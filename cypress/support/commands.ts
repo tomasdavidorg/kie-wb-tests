@@ -3,7 +3,7 @@ declare namespace Cypress {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     interface Chainable<Subject = any> {
 
-        login(user: string, password: string): Chainable<Element>;
+        login(user: string, password: string): void; //Chainable<Element>;
     }
 }
 

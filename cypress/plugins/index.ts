@@ -1,4 +1,5 @@
-const wp = require('@cypress/webpack-preprocessor')
+/* eslint-disable */
+const wp = require("@cypress/webpack-preprocessor")
 module.exports = (on) => {
   const options = {
     webpackOptions: {
@@ -18,5 +19,5 @@ module.exports = (on) => {
       }
     },
   }
-  on('file:preprocessor', wp(options))
+  on("file:preprocessor", wp(options))
 }
