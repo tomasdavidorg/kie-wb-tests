@@ -1,14 +1,11 @@
-// eslint-disable-next-line @typescript-eslint/no-namespace
-declare namespace Cypress {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    interface Chainable<Subject = any> {
+import { LoginPage } from "./LoginPage"
 
-        login(user: string, password: string): void; //Chainable<Element>;
+declare global {
+    namespace Cypress {
+        interface Chainable<Subject> {
+            login: typeof LoginPage.login
+        }
     }
 }
 
-Cypress.Commands.add("login", (user: string, password: string) => {
-    cy.get("[name='j_username']").type(user)
-    cy.get("[name='j_password']").type(password)
-    cy.get(".btn-lg").click()
-})
+Cypress.Commands.add("login", LoginPage.login)
