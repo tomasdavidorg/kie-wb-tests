@@ -9,5 +9,8 @@
     },
     "include": [
         "cypress/**/*.ts"
+    ],
+    "exclude": [
+        "cypress/plugins/index.ts"
     ]
 }

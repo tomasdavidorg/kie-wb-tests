@@ -6,7 +6,7 @@ export class LoginPage {
     static readonly LOGOUT_SUCCESSFUL_LOCATOR = "#logout"
     static readonly LOGIN_AGAIN_BUTTON_LOCATOR = "[value='Login again']"
 
-    public static login(user: string, password: string) {
+    public static login(user: string, password: string): void {
         cy.get(LoginPage.USER_NAME_LOCATOR).type(user)
         cy.get(LoginPage.PASSWORD_LOCATOR).type(password)
         cy.get(LoginPage.SIGN_IN_BUTTON_LOCATOR).click()
