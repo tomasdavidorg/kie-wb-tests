@@ -2,11 +2,10 @@
   "name": "kie-wb-tests",
   "version": "1.0.0",
   "description": "Kie Workbench tests",
-  "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "eslint": "eslint cypress/**"
+    "eslint": "eslint cypress/**/*.ts"
   },
   "keywords": [],
   "author": "",
