@@ -7,5 +7,5 @@ npm run cypress:run
 
 To open the cypress app execute:
 ```
-npm run cypress:run
+npm run cypress:open
 ```
