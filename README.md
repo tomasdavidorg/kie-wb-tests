@@ -1,4 +1,8 @@
 # Test suite for Kie workbench.
+Build project by:
+```
+npm install
+```
 
 To run the tests execute: 
 ```
